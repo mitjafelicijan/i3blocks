@@ -1,0 +1,41 @@
+command=/usr/share/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+[disk]
+label=DISK
+command=bash ~/.config/i3blocks/disk.sh
+separator=true
+interval=5
+
+[cpu]
+label=CPU
+command=bash ~/.config/i3blocks/cpu.sh
+separator=true
+interval=5
+
+[ram]
+label=RAM
+command=bash ~/.config/i3blocks/ram.sh
+separator=true
+interval=5
+
+[gpu]
+label=GPU
+command=bash ~/.config/i3blocks/nvidia.sh
+separator=true
+interval=5
+
+[iface]
+interval=10
+separator=true
+
+[volume]
+label=VOL
+instance=Master
+interval=once
+signal=10
+
+[time]
+command=date '+%a %Y-%m-%d %H:%M:%S'
+interval=5
