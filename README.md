@@ -10,3 +10,13 @@
 ## Install and use
 
 Clone the repo into `~/.congig/i3blocks`.
+
+```
+git clone git@github.com:mitjafelicijan/i3blocks.git ~/.config/i3blocks
+```
+
+And restart i3 with `$mod+shift+r`. That is about it.
+
+I use default fonts for i3 and if you will change to something different your
+progress could look better. I just don't care that much about that and it's fine
+with me.
