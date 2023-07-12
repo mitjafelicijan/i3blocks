@@ -48,3 +48,9 @@ progress could look better. I just don't care that much about that and it's fine
 with me.
 
 > Check https://github.com/vivien/i3blocks-contrib for amazing blocks!
+
+## License
+
+[i3blocks](https://github.com/mitjafelicijan/i3blocks) was written by [Mitja
+Felicijan](https://mitjafelicijan.com) and is released under the BSD zero-clause
+license, see the LICENSE file for more information.
