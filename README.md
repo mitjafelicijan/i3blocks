@@ -4,7 +4,7 @@
 
 - CPU usage progress bar (requires: mpstat, grep, awk)
 - Memory usage progress bar (requires: free, grep, awk)
-- Disk usage progress bar
+- Disk usage progress bar (requires: df, awk, sed)
 - Nvidia GPU usage progress bar
 
 ## Install and use
@@ -24,6 +24,20 @@ cp config_sample config
 ```
 
 And restart i3 with `$mod+shift+r`. That is about it.
+
+Each command takes two **optional** arguments:
+
+- `-w 10` - width of the progress bar (default 10)
+- `-p 1` - if 1 then it also prints percentage label (default 0)
+
+Example usage of these arguments:
+
+```bash
+./cpu				# will display 10 bars and no percentage label
+./cpu -w 20			# will display 20 bars and no percentage label
+./cpu -w 20 -p 0	# will display 20 bars and no percentage label
+./cpu -w 10 -p 1	# will display 10 bars and percentage label
+```
 
 I use default fonts for i3 and if you will change to something different your
 progress could look better. I just don't care that much about that and it's fine
