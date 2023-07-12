@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#define UTILS_IMPLEMENTATION
 #include "utils.h"
 
 int main(int argc, char *argv[]) {

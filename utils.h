@@ -1,9 +1,24 @@
+#ifndef UTILS_H_
+#define UTILS_H_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 
-void display_progress_bar(int used, int width, int show_percentage) {
+#ifndef UTILSDEF
+#define UTILSDEF static inline
+#endif
+
+UTILSDEF void display_progress_bar(int used, int width, int show_percentage);
+UTILSDEF int get_arg_value(char* flag, int argc, char* argv[], int default_value);
+UTILSDEF int get_cmd_value(char* cmd);
+
+#endif // UTILS_H_
+
+#ifdef UTILS_IMPLEMENTATION
+
+UTILSDEF void display_progress_bar(int used, int width, int show_percentage) {
   int progress = (used * width) / 100;
   int remaining = width - progress;
 
@@ -13,7 +28,7 @@ void display_progress_bar(int used, int width, int show_percentage) {
   printf("\n");
 }
 
-int get_arg_value(char* flag, int argc, char* argv[], int default_value) {
+UTILSDEF int get_arg_value(char* flag, int argc, char* argv[], int default_value) {
   for (int i = 1; i < argc; i++) {
 	if (strcmp(argv[i], flag) == 0) {
 	  if (i + 1 < argc) {
@@ -27,7 +42,7 @@ int get_arg_value(char* flag, int argc, char* argv[], int default_value) {
   return default_value;
 }
 
-int get_cmd_value(char* cmd) {
+UTILSDEF int get_cmd_value(char* cmd) {
   FILE *fp;
   char path[256];
   char *endptr;
@@ -53,3 +68,5 @@ int get_cmd_value(char* cmd) {
   pclose(fp);
   return (int)val;
 }
+
+#endif // UTILS_IMPLEMENTATION
