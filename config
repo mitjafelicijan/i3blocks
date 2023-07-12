@@ -10,9 +10,9 @@ interval=5
 
 [cpu]
 label=CPU
-command=bash ~/.config/i3blocks/cpu.sh
+command=~/.config/i3blocks/cpu -w 10
 separator=true
-interval=5
+interval=3
 
 [ram]
 label=RAM
