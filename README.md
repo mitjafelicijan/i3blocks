@@ -7,8 +7,9 @@
 - Disk usage progress bar (requires: df, awk, sed)
 - Nvidia GPU usage progress bar
 
-> If used percentage for a resource is bellow 10% then no bars will be
-> displayed!
+> **Note**: If default width of 10 is used and used percentage for a resource is
+> bellow 10% then no bars will be displayed! New block gets only displayed when
+> its bigger than 100% divided by number of blocks aka width.
 
 ## Install and use
 
