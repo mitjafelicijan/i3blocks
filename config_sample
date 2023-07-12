@@ -16,7 +16,7 @@ interval=3
 
 [ram]
 label=RAM
-command=bash ~/.config/i3blocks/ram.sh
+command=~/.config/i3blocks/ram -w 10
 separator=true
 interval=5
 
