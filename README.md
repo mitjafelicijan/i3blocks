@@ -5,7 +5,7 @@
 - CPU usage progress bar (requires: mpstat, grep, awk)
 - Memory usage progress bar (requires: free, grep, awk)
 - Disk usage progress bar (requires: df, awk, sed)
-- Nvidia GPU usage progress bar
+- Nvidia GPU usage progress bar (requires: nvidia-smi)
 
 > **Note**: If default width of 10 is used and used percentage for a resource is
 > bellow 10% then no bars will be displayed! New block gets only displayed when

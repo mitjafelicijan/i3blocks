@@ -20,9 +20,9 @@ command=~/.config/i3blocks/ram -w 10
 separator=true
 interval=5
 
-[gpu]
+[nvidia]
 label=GPU
-command=bash ~/.config/i3blocks/nvidia.sh
+command=~/.config/i3blocks/nvidia -w 10
 separator=true
 interval=5
 
