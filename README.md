@@ -20,3 +20,5 @@ And restart i3 with `$mod+shift+r`. That is about it.
 I use default fonts for i3 and if you will change to something different your
 progress could look better. I just don't care that much about that and it's fine
 with me.
+
+> Check https://github.com/vivien/i3blocks-contrib for amazing blocks!
