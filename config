@@ -30,6 +30,10 @@ interval=5
 interval=10
 separator=true
 
+[battery]
+label=BAT
+interval=30
+
 [volume]
 label=VOL
 instance=Master
