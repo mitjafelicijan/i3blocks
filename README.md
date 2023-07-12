@@ -11,7 +11,7 @@
 
 - C compiler like GCC, Clang or tcc is required.
 
-Clone the repo into `~/.congig/i3blocks`.
+Clone the repo into `~/.config/i3blocks`.
 
 ```
 git clone git@github.com:mitjafelicijan/i3blocks.git ~/.config/i3blocks
