@@ -1,4 +1,4 @@
-![2023-07-12-01:50:36](https://github.com/mitjafelicijan/i3blocks/assets/296714/c6b68f57-56ce-4007-8264-03698cf0c339)
+![Screenshot](https://github.com/mitjafelicijan/i3blocks/assets/296714/c6b68f57-56ce-4007-8264-03698cf0c339)
 
 # i3blocks and some custom scripts
 
