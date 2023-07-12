@@ -7,6 +7,9 @@
 - Disk usage progress bar (requires: df, awk, sed)
 - Nvidia GPU usage progress bar
 
+> If used percentage for a resource is bellow 10% then no bars will be
+> displayed!
+
 ## Install and use
 
 - C compiler like GCC, Clang or tcc is required.
